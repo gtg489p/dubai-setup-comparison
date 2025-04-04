@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Business Setup Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e6f7ff;
+        }
+        .highlight {
+            background-color: #ffffcc;
+            font-weight: bold;
+        }
+        .total-row {
+            font-weight: bold;
+            background-color: #e6f7ff;
+        }
+        .best-value {
+            background-color: #d4edda;
+        }
+        .highest-cost {
+            background-color: #f8d7da;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+        .tabs {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            margin-bottom: 20px;
+        }
+        .tab-button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        .tab-button:hover {
+            background-color: #ddd;
+        }
+        .tab-button.active {
+            background-color: #34495e;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .chart-container {
+            height: 400px;
+            margin-bottom: 30px;
+        }
+        .requirements-met {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+        .met {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .partial {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .not-met {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dubai Business Setup Comparison</h1>
+    <p>Comparison of business setup providers for Alacrity (CEO/Founder: Nathan Petty)</p>
+    
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'summary')">Summary</button>
+        <button class="tab-button" onclick="openTab(event, 'detailed')">Detailed Costs</button>
+        <button class="tab-button" onclick="openTab(event, 'requirements')">Requirements Analysis</button>
+        <button class="tab-button" onclick="openTab(event, 'recommendations')">Recommendations</button>
+    </div>
+    
+    <div id="summary" class="tab-content" style="display: block;">
+        <h2>Total Costs Summary (in USD)</h2>
+        <table>
+            <tr>
+                <th>Provider</th>
+                <th>Core License</th>
+                <th>Mandatory Fees</th>
+                <th>Visa (2 people)</th>
+                <th>Service Fees</th>
+                <th>TOTAL</th>
+            </tr>
+            <tr>
+                <td>Emirabiz</td>
+                <td>$1,600</td>
+                <td>$6,555</td>
+                <td>$3,270</td>
+                <td>$2,342</td>
+                <td class="best-value">$13,767</td>
+            </tr>
+            <tr>
+                <td>RadiantBiz</td>
+                <td>$1,600</td>
+                <td>$7,050</td>
+                <td>$3,000</td>
+                <td>$2,500</td>
+                <td class="best-value">$14,150</td>
+            </tr>
+            <tr>
+                <td>CommitBiz</td>
+                <td>$1,600</td>
+                <td>$6,550</td>
+                <td>Not itemized</td>
+                <td>$3,150</td>
+                <td>$11,300+</td>
+            </tr>
+            <tr>
+                <td>Virtuzone</td>
+                <td>$1,600</td>
+                <td>$6,790</td>
+                <td>$3,942</td>
+                <td>$5,775</td>
+                <td class="highest-cost">$13,650+</td>
+            </tr>
+            <tr>
+                <td>Avyanco</td>
+                <td>$1,600</td>
+                <td>$7,900</td>
+                <td>$2,950</td>
+                <td>$4,000</td>
+                <td class="highest-cost">$16,450</td>
+            </tr>
+        </table>
+        <div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+            <h4 style="margin-top: 0;">Visa Inclusion Clarification</h4>
+            <ul>
+                <li><strong>Emirabiz ($13,767):</strong> Includes 2 visas - detailed costs for main applicant ($1,330) and second applicant ($1,260)</li>
+                <li><strong>RadiantBiz ($14,150):</strong> Includes 2 visas - explicitly states "2 Residency Visas: $3,000 ($1,500 USD each)"</li>
+                <li><strong>CommitBiz ($11,300):</strong> NO visas included - their quote doesn't itemize or include visa costs</li>
+                <li><strong>Virtuzone ($13,650+):</strong> NO visas included in base price - lists per-visa costs separately (AED 6,300 ≈ $1,701 per visa)</li>
+                <li><strong>Avyanco ($16,450):</strong> Includes ONLY 1 visa - explicitly states "Number of Partner/Shareholder Visa: 1 Visa"</li>
+            </ul>
+            <p><strong>Important:</strong> Since you need 2 visas (for yourself and one employee), the true comparable costs would be:</p>
+            <ul>
+                <li>Emirabiz: $13,767 (includes 2 visas)</li>
+                <li>RadiantBiz: $14,150 (includes 2 visas)</li>
+                <li>CommitBiz: $11,300 + unknown visa costs</li>
+                <li>Virtuzone: $13,650 + $3,402 for 2 visas = $17,052</li>
+                <li>Avyanco: $16,450 + $2,950 for second visa = $19,400</li>
+            </ul>
+        </div>
+        
+        <h3>Key Observations</h3>
+        <ul>
+            <li><strong>Core License Costs:</strong> Identical across all providers ($1,600)</li>
+            <li><strong>Lowest Total Cost:</strong> CommitBiz at $11,300+ (but missing visa costs)</li>
+            <li><strong>Most Comprehensive Package:</strong> RadiantBiz at $14,150 (all-inclusive)</li>
+            <li><strong>Best Value:</strong> Emirabiz at $13,767 (detailed breakdown, competitive price)</li>
+            <li><strong>Most Expensive:</strong> Avyanco ($16,450 for one visa) and Virtuzone ($13,650+ plus visa costs)</li>
+        </ul>
+    </div>
+    
+    <div id="detailed" class="tab-content">
+        <h2>Detailed Cost Breakdown</h2>
+        
+        <h3>Core License and Registration Costs (in USD)</h3>
+        <table>
+            <tr>
+                <th>Cost Item</th>
+                <th>Emirabiz</th>
+                <th>RadiantBiz</th>
+                <th>Virtuzone</th>
+                <th>CommitBiz</th>
+                <th>Avyanco</th>
+            </tr>
+            <tr>
+                <td>Registration Fee</td>
+                <td>$100</td>
+                <td>$100</td>
+                <td>$100</td>
+                <td>$100</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>License Fee</td>
+                <td>$1,500</td>
+                <td>$1,500</td>
+                <td>$1,500</td>
+                <td>$1,500</td>
+                <td>$1,500</td>
+            </tr>
+            <tr class="total-row">
+                <td>Subtotal - Core License</td>
+                <td>$1,600</td>
+                <td>$1,600</td>
+                <td>$1,600</td>
+                <td>$1,600</td>
+                <td>$1,600</td>
+            </tr>
+        </table>
+        
+        <h3>Mandatory Additional Fees (in USD)</h3>
+        <table>
+            <tr>
+                <th>Cost Item</th>
+                <th>Emirabiz</th>
+                <th>RadiantBiz</th>
+                <th>Virtuzone</th>
+                <th>CommitBiz</th>
+                <th>Avyanco</th>
+            </tr>
+            <tr>
+                <td>FlexiDesk/Co-Working Space</td>
+                <td>$6,000 + 5% VAT<br>= $6,300</td>
+                <td>$6,000</td>
+                <td>$6,000</td>
+                <td>$6,000 + VAT<br>= $6,300</td>
+                <td>$6,000</td>
+            </tr>
+            <tr>
+                <td>Data Protection Fee</td>
+                <td>$250 (Y1)<br>$200 (Y2+)</td>
+                <td>$250</td>
+                <td>$250</td>
+                <td>$250</td>
+                <td>Not itemized</td>
+            </tr>
+            <tr>
+                <td>Confirmation Statement</td>
+                <td>$300 (from Y2)</td>
+                <td>Not specified</td>
+                <td>$300 (from Y2)</td>
+                <td>Not specified</td>
+                <td>Not itemized</td>
+            </tr>
+            <tr>
+                <td>Knowledge & Innovation Fee</td>
+                <td>$5.45</td>
+                <td>Not specified</td>
+                <td>Not specified</td>
+                <td>Not specified</td>
+                <td>Not itemized</td>
+            </tr>
+            <tr>
+                <td>Establishment Card</td>
+                <td>Included in visa</td>
+                <td>$800</td>
+                <td>AED 2,000<br>≈ $540</td>
+                <td>Not itemized</td>
+                <td>$1,900</td>
+            </tr>
+            <tr class="total-row">
+                <td>Subtotal - Mandatory Fees</td>
+                <td>$6,555.45</td>
+                <td>$7,050</td>
+                <td>$6,790</td>
+                <td>$6,550</td>
+                <td>$7,900</td>
+            </tr>
+        </table>
+        
+        <h3>Visa Costs (in USD)</h3>
+        <p class="note"><strong>Note:</strong> Based on your requirement for 2 visas (yourself and one employee)</p>
+        <table>
+            <tr>
+                <th>Cost Item</th>
+                <th>Emirabiz</th>
+                <th>RadiantBiz</th>
+                <th>Virtuzone</th>
+                <th>CommitBiz</th>
+                <th>Avyanco</th>
+            </tr>
+            <tr>
+                <td>Main Applicant (Outside UAE)</td>
+                <td>AED 3,900<br>≈ $1,330</td>
+                <td>$1,500</td>
+                <td>AED 6,300<br>≈ $1,701</td>
+                <td>Not itemized</td>
+                <td>$2,950</td>
+            </tr>
+            <tr>
+                <td>Second Applicant (Outside UAE)</td>
+                <td>AED 3,700<br>≈ $1,260</td>
+                <td>$1,500</td>
+                <td>AED 6,300<br>≈ $1,701</td>
+                <td>Not itemized</td>
+                <td>Not specified</td>
+            </tr>
+            <tr>
+                <td>Deposits (2 people)</td>
+                <td>AED 2,000<br>≈ $680</td>
+                <td>Not specified</td>
+                <td>AED 2,000<br>≈ $540</td>
+                <td>Not specified</td>
+                <td>Not specified</td>
+            </tr>
+            <tr class="total-row">
+                <td>Subtotal - Visa Costs</td>
+                <td>$3,270</td>
+                <td>$3,000</td>
+                <td>$3,942</td>
+                <td>Not itemized</td>
+                <td>$2,950</td>
+            </tr>
+        </table>
+        
+        <h3>Professional Service Fees (in USD)</h3>
+        <table>
+            <tr>
+                <th>Cost Item</th>
+                <th>Emirabiz</th>
+                <th>RadiantBiz</th>
+                <th>Virtuzone</th>
+                <th>CommitBiz</th>
+                <th>Avyanco</th>
+            </tr>
+            <tr>
+                <td>Professional/Management Fee</td>
+                <td>AED 8,675<br>≈ $2,342</td>
+                <td>$2,500</td>
+                <td>$5,500 + VAT<br>= $5,775</td>
+                <td>$3,000 + VAT<br>= $3,150</td>
+                <td>$4,000</td>
+            </tr>
+            <tr class="total-row">
+                <td>Subtotal - Service Fees</td>
+                <td>$2,342</td>
+                <td>$2,500</td>
+                <td>$5,775</td>
+                <td>$3,150</td>
+                <td>$4,000</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="requirements" class="tab-content">
+        <h2>Requirements Analysis</h2>
+        
+        <h3>Location Requirements</h3>
+        <table>
+            <tr>
+                <th>Provider</th>
+                <th>Dubai AI Campus</th>
+                <th>DIFC Innovation One Building</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>Emirabiz</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met partial">Not Specified</span></td>
+                <td>Confirms DIFC location but not specific building</td>
+            </tr>
+            <tr>
+                <td>RadiantBiz</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td>Explicitly confirms Dubai AI Campus location</td>
+            </tr>
+            <tr>
+                <td>Virtuzone</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met partial">Not Specified</span></td>
+                <td>Mentions DIFC but not specific building</td>
+            </tr>
+            <tr>
+                <td>CommitBiz</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td>Explicitly confirms AI INNOVATION ONE building</td>
+            </tr>
+            <tr>
+                <td>Avyanco</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met partial">Not Specified</span></td>
+                <td>Confirms DIFC location but not specific building</td>
+            </tr>
+        </table>
+        
+        <h3>License Requirements</h3>
+        <table>
+            <tr>
+                <th>Provider</th>
+                <th>AI License</th>
+                <th>Software House Activity</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>Emirabiz</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td>Explicitly mentions AI License with Software House activity</td>
+            </tr>
+            <tr>
+                <td>RadiantBiz</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met partial">Not Specified</span></td>
+                <td>Mentions AI License but not specific activities</td>
+            </tr>
+            <tr>
+                <td>Virtuzone</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td>Offers AI License with multiple activities</td>
+            </tr>
+            <tr>
+                <td>CommitBiz</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met partial">Not Specified</span></td>
+                <td>Confirms AI License but activities not detailed</td>
+            </tr>
+            <tr>
+                <td>Avyanco</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td>Includes both AI and Software activities</td>
+            </tr>
+        </table>
+        
+        <h3>Timeline Requirements</h3>
+        <table>
+            <tr>
+                <th>Provider</th>
+                <th>Expedited Processing</th>
+                <th>Completion by April 21</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>Emirabiz</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met met">Likely</span></td>
+                <td>Offers fast-track services for expedited processing</td>
+            </tr>
+            <tr>
+                <td>RadiantBiz</td>
+                <td><span class="requirements-met partial">Not Specified</span></td>
+                <td><span class="requirements-met partial">Not Specified</span></td>
+                <td>No specific timeline guarantees mentioned</td>
+            </tr>
+            <tr>
+                <td>Virtuzone</td>
+                <td><span class="requirements-met partial">Not Specified</span></td>
+                <td><span class="requirements-met partial">Not Specified</span></td>
+                <td>No specific timeline guarantees mentioned</td>
+            </tr>
+            <tr>
+                <td>CommitBiz</td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td><span class="requirements-met met">Likely</span></td>
+                <td>Has contacts to help expedite incorporation process</td>
+            </tr>
+            <tr>
+                <td>Avyanco</td>
+                <td><span class="requirements-met partial">Standard</span></td>
+                <td><span class="requirements-met partial">Uncertain</span></td>
+                <td>Standard timeline: 15-20 days for license, 7-10 days for visa</td>
+            </tr>
+        </table>
+        
+        <h3>Visa Requirements</h3>
+        <table>
+            <tr>
+                <th>Provider</th>
+                <th>Two Visas Included</th>
+                <th>Outside UAE Processing</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>Emirabiz</td>
+                <td><span class="requirements-met met">YES - Both Included</span></td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td>Detailed breakdown for two visas from outside UAE ($1,330 + $1,260 = $2,590)</td>
+            </tr>
+            <tr>
+                <td>RadiantBiz</td>
+                <td><span class="requirements-met met">YES - Both Included</span></td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td>Explicitly includes "2 Residency Visas: $3,000 ($1,500 USD each)"</td>
+            </tr>
+            <tr>
+                <td>Virtuzone</td>
+                <td><span class="requirements-met not-met">NO - Not Included</span></td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td>Lists per-visa cost (AED 6,300 ≈ $1,701 per visa) but not included in base price</td>
+            </tr>
+            <tr>
+                <td>CommitBiz</td>
+                <td><span class="requirements-met not-met">NO - Not Included</span></td>
+                <td><span class="requirements-met partial">Not Specified</span></td>
+                <td>No visa costs mentioned or itemized in quote</td>
+            </tr>
+            <tr>
+                <td>Avyanco</td>
+                <td><span class="requirements-met partial">PARTIAL - One Only</span></td>
+                <td><span class="requirements-met met">Confirmed</span></td>
+                <td>Explicitly states "Number of Partner/Shareholder Visa: 1 Visa"</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="recommendations" class="tab-content">
+        <h2>Recommendations</h2>
+        
+        <h3>Best Overall Match</h3>
+        <p><strong>RadiantBiz</strong> and <strong>CommitBiz</strong> appear to be the best overall matches for your requirements:</p>
+        <ul>
+            <li>Both explicitly confirm the DIFC Innovation One building location</li>
+            <li>Both offer the AI License you require</li>
+            <li>RadiantBiz offers a comprehensive all-inclusive package at a competitive price</li>
+            <li>CommitBiz appears to have the lowest base cost (though visa costs need clarification)</li>
+        </ul>
+        
+        <h3>Best Value for Money</h3>
+        <p><strong>Emirabiz</strong> offers the best value for money:</p>
+        <ul>
+            <li>Competitive pricing at $13,767</li>
+            <li>Most transparent and detailed breakdown of all costs</li>
+            <li>Explicitly offers fast-track services for expedited processing</li>
+            <li>Detailed visa costs for both applicants</li>
+        </ul>
+        
+        <h3>Recommended Follow-up Questions</h3>
+        <table>
+            <tr>
+                <th>Provider</th>
+                <th>Questions to Ask</th>
+            </tr>
+            <tr>
+                <td>CommitBiz</td>
+                <td>
+                    <ul>
+                        <li>What are the detailed visa costs for two people?</li>
+                        <li>Can you guarantee completion by April 21, 2025?</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>RadiantBiz</td>
+                <td>
+                    <ul>
+                        <li>Do you offer expedited processing services?</li>
+                        <li>Can you guarantee completion by April 21, 2025?</li>
+                        <li>Does your license include Software House activity?</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Emirabiz</td>
+                <td>
+                    <ul>
+                        <li>Can you confirm the specific location is in the Innovation One building?</li>
+                        <li>What is your timeline for completion?</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        
+        <h3>Final Recommendation</h3>
+        <p>Based on your specific requirements for 2 visas and the Innovation One building location:</p>
+        <ol>
+            <li><strong>First Choice: RadiantBiz ($14,150)</strong> - Confirms exact location, all-inclusive package with 2 visas, competitive pricing</li>
+            <li><strong>Second Choice: Emirabiz ($13,767)</strong> - Best value for money, includes 2 visas, most transparent pricing, expedited services</li>
+            <li><strong>Third Choice: CommitBiz ($11,300 + visa costs)</strong> - Confirms exact location, appears lowest base cost but requires additional visa costs</li>
+        </ol>
+        <p><strong>Important Visa Consideration:</strong> Since you require 2 visas, providers that already include both visas in their quotes (RadiantBiz and Emirabiz) offer more predictable total costs than those requiring additional visa purchases.</p>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+            
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
